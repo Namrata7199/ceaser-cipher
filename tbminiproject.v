@@ -12,6 +12,57 @@ module t_caesercipher;
 	begin
 	$dumpfile("caeser_cipher_vcddump.vcd");
 	$dumpvars(0,t_caesercipher);
+	a=1'b0;
+	b=1'b0;
+	c=1'b0;
+	d=1'b0;
+	e=1'b0;
+	f=1'b0;
+	g=1'b0;
+	h=1'b0;
+	i=1'b0;
+	j=1'b0;
+	k=1'b0;
+	l=1'b0;
+	m=1'b0;
+	n=1'b0;
+	o=1'b0;
+	p=1'b0;
+	q=1'b0;
+	r=1'b0;
+	s=1'b0;
+	t=1'b0;
+	u=1'b0;
+	v=1'b0;
+	x=1'b0;
+	y=1'b0;
+	z=1'b0;
+	i1=1'b0;
+	i2=1'b0;
+	i3=1'b0;
+	i4=1'b0;
+	i5=1'b0;
+	i6=1'b0;
+	i7=1'b0;
+	i8=1'b0;
+	i9=1'b0;
+	i10=1'b0;
+	i11=1'b0;
+	i12=1'b0;
+	i13=1'b0;
+	i14=1'b0;
+	i15=1'b0;
+	i16=1'b0;
+	i17=1'b0;
+	i18=1'b0;
+	i19=1'b0;
+	i20=1'b0;
+	i21=1'b0;
+	i22=1'b0;
+	i23=1'b0;
+	i24=1'b0;
+	i25=1'b0;
+	i26=1'b0;
 	  
 	$monitor("Time = %1d key = a shift = 6 caps = %d en/de = %d out = %c",$time, cap, en, out);
 	  
@@ -52,7 +103,7 @@ module t_caesercipher;
 	cap = 1'b0;
 	en = 1'b1;
 #10
-	$monitor("Time = %1d key = w shift = 4 caps = %d en/de = %d out = %c",$time, cap, en, out);
+	$monitor("Time = %1d key = w shift = 4 caps = %d en/de = %d out = %8b",$time, cap, en, out);
 	a = 1'b0;
 	i26 = 1'b0;
 	w = 1'b1;
@@ -60,16 +111,17 @@ module t_caesercipher;
 	cap = 1'b1;
 	en = 1'b1;
 #10
-	$monitor("Time = %1d key = d shift = 9 caps = %d en/de = %d out = %c",$time, cap, en, out);
+	
 	w = 1'b0;
 	i4 = 1'b0;
 	d = 1'b1;
 	i9 = 1'b1;
 	cap = 1'b1;
 	en = 1'b1;
+	$monitor("Time = %1d key = d shift = 9 caps = %d en/de = %d out = %8b",$time, cap, en, out);
 #10
 
-
+#70 $finish;
 	end	
 
 	

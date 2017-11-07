@@ -66,7 +66,7 @@ input [0:6]a;
 input [0:6]b;
 input c;
 output [0:7]s;
-wire c0,c1,c2,c3,c4,c5,c6,c7;
+wire c0,c1,c2,c3,c4,c5,c6;
 full_adder fa1(a[0],b[0],c,c0,s[0]);
 full_adder fa2(a[1],b[1],c0,c1,s[1]);
 full_adder fa3(a[2],b[2],c1,c2,s[2]);
@@ -127,5 +127,5 @@ assign w6[0]=w10[0],
 	w6[2]=w10[2],
 	w6[3]=w10[3],
 	w6[4]=w10[4];
-bit7_adder b7add(w7,w6,en,out);
+bit7_adder b7add(w7,w6,1'b0,out);
 endmodule
