@@ -2,18 +2,18 @@
 
 This mini-project is an implementation of encryption and decryption using Caeser Cipher.
 
-#Input format
+# Input format
 The user gives 4 inputs
 * Encryption/Decryption (0/1)
 * Caps Lock (On/Off)
 * Alphabet (a-z or A-Z depending upon the Caps)
 * Shift Amount (1-26)
 
-#Output format
+# Output format
 
 The string is taken as an input from the user character wise and then the encrypted/decrypted character is shown on the TTY Display.
 
-#Functionality
+# Functionality
 
 STEP-1: Each alphabet (a-z) is assigned a number corresponding to it (a-0,b-1,c-2.....z-25). The number associated with the alphabet goes to a binary 	encoder and gets converted to its equivalent binary form. Similarly, the shift amount is also binary encoded.
 
